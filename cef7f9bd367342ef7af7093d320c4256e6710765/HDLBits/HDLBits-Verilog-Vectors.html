@@ -1,10 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<script src="https://cdn.jsdelivr.net/gh/MarketingPipeline/Markdown-Tag/markdown-tag-GitHub.js"></script> 
+</head>
+<body>
+<github-md>
 # Vector2
 ```verilog
 module top_module (
 	input [31:0] in,
 	output [31:0] out
 );
-
 	assign out[31:24] = in[ 7: 0];	
 	assign out[23:16] = in[15: 8];	
 	assign out[15: 8] = in[23:16];	
@@ -94,3 +100,5 @@ module top_module (
     assign out = ~{ {5{a}},{5{b}},{5{c}},{5{d}},{5{e}} } ^ { {5{a,b,c,d,e}} }; 
 endmodule
 ```
+</github-md>
+</body>
